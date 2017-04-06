@@ -1,5 +1,32 @@
 [user]
-	name = Tom Moor
-	email = tom.moor@gmail.com
+  name = Tom Moor
+  email = tom.moor@gmail.com
+
 [push]
-	default = simple
+  default = simple
+  followTags = true
+
+[alias]
+  undo = reset --soft HEAD^
+  # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+
+  stash-all = stash save --include-untracked
+  # https://git-scm.com/docs/git-stash
+
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  # No need for a GUI - a nice, colorful, graphical representation
+  # https://git-scm.com/docs/git-log
+  # via https://medium.com/@payload.dd/thanks-for-the-git-st-i-will-use-this-4da5839a21a4
+
+  branchbydate = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  # Displays branches in date order of their creation, newest last
+
+
+[commit]
+  gpgSign = true
+  # https://help.github.com/articles/about-gpg/
+
+[status]
+  showUntrackedFiles = all
+  # Sometimes a newly-added folder, since it's only one line in git status, can slip under the radar.
+  # https://git-scm.com/docs/git-config#git-config-statusshowUntrackedFiles
