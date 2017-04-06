@@ -1,0 +1,5 @@
+[user]
+	name = Tom Moor
+	email = tom.moor@gmail.com
+[push]
+	default = simple
