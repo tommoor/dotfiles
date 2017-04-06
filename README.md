@@ -5,10 +5,22 @@ Scripts and dotfiles for getting start on a new machine quickly
 
 ## Installation
 
+
+Install [rcm](https://github.com/thoughtbot/rcm)
 ```
-git clone git://github.com/tommoor/dotfiles.git ~/.dotfiles
 brew tap thoughtbot/formulae
 brew install rcm
+```
+
+Install dotfiles
+```
+git clone git://github.com/tommoor/dotfiles.git ~/.dotfiles
+env RCRC=$HOME/.dotfiles/rcrc
+rcup
+```
+
+Run rcup to update from `~/.dotfiles > ~/` at any time
+```
 rcup
 ```
 

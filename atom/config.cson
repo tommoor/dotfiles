@@ -1,0 +1,42 @@
+"*":
+  core:
+    disabledPackages: [
+      "crystal-tools"
+    ]
+    ignoredNames: [
+      "vendor/batbelt node_modules"
+    ]
+    projectHome: "/Users/tom/projects"
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "chester-atom-syntax"
+    ]
+  editor:
+    invisibles: {}
+  "exception-reporting":
+    userId: "73f4a73f-36f8-9c93-8849-b071dc0c05b2"
+  "git-diff":
+    showIconsInEditorGutter: true
+  linter:
+    lintOnChange: false
+  "linter-eslint":
+    fixOnSave: true
+  "linter-sass-lint":
+    noConfigDisable: true
+  "linter-ui-default":
+    panelHeight: 216
+    showPanel: true
+  minimap: {}
+  "one-light-ui": {}
+  "open-recent": {}
+  "prettier-atom":
+    formatOnSaveOptions: {}
+  "quick-editor": {}
+  stylefmt: {}
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
