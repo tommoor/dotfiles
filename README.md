@@ -28,6 +28,7 @@ rcup
 You can now install other essentials from the Brewfile with:
 
 ```
+cd ~/.dotfiles
 brew tap homebrew/bundle
 brew bundle
 ```
