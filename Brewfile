@@ -13,7 +13,7 @@ brew 'yarn'
 
 cask '1password'
 cask 'firefox'
-cask 'opera'
+cask 'iterm2'
 cask 'docker'
 cask 'google-chrome'
 cask 'sketch'
