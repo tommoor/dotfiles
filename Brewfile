@@ -1,5 +1,5 @@
-tap 'caskroom/cask'
-tap 'caskroom/versions'
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
 
 brew 'awscli'
 brew 'git'
@@ -23,5 +23,4 @@ cask 'slack'
 cask 'spotify'
 cask 'little-snitch'
 cask 'transmission'
-cask 'linkliar'
 cask 'vlc'
