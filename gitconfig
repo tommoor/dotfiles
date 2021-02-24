@@ -21,11 +21,6 @@
   branchbydate = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
   # Displays branches in date order of their creation, newest last
 
-
-[commit]
-  gpgSign = true
-  # https://help.github.com/articles/about-gpg/
-
 [status]
   showUntrackedFiles = all
   # Sometimes a newly-added folder, since it's only one line in git status, can slip under the radar.
